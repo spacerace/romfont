@@ -1,0 +1,42 @@
+Filename of ROM                                  8x8  8x14 8x16  Bus    Memory    Comments (BIOS manuf., year, version, ...)
+------------------------------------------------+----+----+----+------+--------+--------------------------------------------------------------------------------------------------------
+ATI.X550.128.040512.rom	                        |    |    |    |      |        |
+Asus.6200.16.050106.rom                         |    |    |    |      |        | NV44, 2004 Nvidia, Version 5.44.02.11.00 / AS05
+CLGD5442.ROM                                    |    |    |    |      |        | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
+Commodore386SX-25_AVGA2.bin                     | ok |    | ok | ISA  |   512k | 03/19/92, Acumos AVGA2, DeskTop VGA BIOS (340-000-11-Rev1.00), 1984-1991 Phoenix
+Connect3D.9500NP.128.Infineon30.021212.rom      |    |    |    | AGP  |        | 2002/12/12, R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
+Diamond Stealth 64 Video VRAM PCI 3.00.bin      |    |    |    |      |        | 07/05/95, Stealth 64 Video VRAM Vers. 3.00, Diamond MultiMedia Systems
+ELSAVIC2.ROM                                    |    | ok |    | AGP  |        | 11/23/98, ELSA VICTORY II 4.03.00, 98-98 ELSA, 90-98 Elpin Systems
+Elsa.FireGLV3200.128.040910.rom                 |    |    | ok | PCIE |  128MB | 2004/09/10, RV380, 1988-2003, ATI BK-ATI VER008.015.121.000
+FujitsuSiemens.QuadroFX1700.512.080123.rom      |    |    |    |      |  512MB |
+FujitsuSiemens.X300Mobility.32.050608.rom       |    |    | ok |      |   32MB |
+G400.ROM                                        |    |    |    |      |        |
+GENOA.ROM                                       |    |    |    |      |        |
+Gigabyte.6200.16.050711.rom                     |    |    |    |      |        |
+Leadtek.6200.16.050128.rom                      |    |    |    |      |        |
+M32.ROM                                         |    |    |    |      |        |
+M64GX.ROM                                       |    |    |    |      |        |
+MGAMIL2.ROM                                     |    |    |    |      |        |
+MIROV968.ROM                                    |    | ok |    |      |        |
+MORSE KP800 VGA CL-GD520A-32PC-B.bin            |    |    |    |      |        |
+NCR VLB VGA CL-GD5428-80QC-A.bin                |    | ok |    |      |        |
+R128GL.ROM                                      |    |    |    |      |        |
+RIVA128A.ROM                                    |    |    |    |      |        |
+S3T64V2.ROM                                     |    |    |    | PCI  |        |
+S3VIRGX2.ROM                                    |    | ok | ok | PCI  |        |
+Sapphire.9600NP.256.unknown.031028.rom          |    |    |    |      |  256MB |
+Sapphire.9600PRO.128.Samsung28.030829.rom       |    |    |    |      |  128MB |
+Sapphire.9800XT.256.unknown.031003.rom          |    |    |    |      |  256MB |
+TNT2M64.ROM                                     |    |    |    |      |        |
+TSVGA 9020-12 ET4000 ISA VGA.bin                | ok |    | ok |      |        |
+Trident TVGA8900C (S27C256).bin                 |    |    |    | ISA  |        |
+Tseng ET3000AX ISA VGA-VGA ULTRA.bin            |    |    |    | ISA  |        |
+V7MERC.ROM                                      | ok | ok | ok |      |        |
+VANTA.ROM                                       |    |    |    |      |        |
+VANTAGE.ROM                                     |    |    |    |      |        |
+VDOO3PCI.ROM                                    |    |    |    |      |        |
+WIN1KXHR.ROM                                    |    |    |    |      |        |
+WONDER16.ROM                                    |    |    |    |      |        |
+XGA.ROM                                         |    |    |    |      |        |
+et4000_stb.vbi                                  |    |    |    |      |        |
+et4000w32isa.BIN                                |    |    | ok |      |        |
