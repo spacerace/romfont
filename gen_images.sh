@@ -12,6 +12,10 @@ do
 	
 	outpng="./font-images/$header.png"
 	magick convert $out $outpng
+
+	outzoom="./font-images/zoomed/zoomed_$header.png"
+	magick convert $out -resize 400% $outzoom
+
 	rm $out
 
 	echo ""
