@@ -20,21 +20,7 @@ $ ./gen_images.sh
 ```
 
 # Already extracted fonts
-font-bin/AVGA2_8x16.bin
-font-bin/AVGA2_8x8.bin
-font-bin/ELSAVIC2_8x14.bin
-font-bin/ElsaFireGLV3200_128_8x16.bin
-font-bin/FujitsuSiemensX300M_8x16.bin
-font-bin/MIROV968_8x14.bin
-font-bin/NCR_GD5428_8x14.bin
-font-bin/S3VIRGEGX2_8x14.bin
-font-bin/S3VIRGEGX2_8x16.bin
-font-bin/TSVGA_ET4000_8x16.bin
-font-bin/TSVGA_ET4000_8x8.bin
-font-bin/V7MERC_8x14.bin
-font-bin/V7MERC_8x16.bin
-font-bin/V7MERC_8x8.bin
-font-bin/et4000w32isa_8x16.bin
+```
 LEGEND: "ok" - font already extracted
         "XX" - font not included in ROM (newer cards dont ship 8x14 usually)
         "  " - not yet done
@@ -83,3 +69,4 @@ et4000_stb.vbi                                  |    | XX |    |      |        |
 et4000w32isa.BIN                                |    |    | ok |      |        |
 et4000_weirdlowerL.bin                          | ok | ok | ok | ISA  |512k/1M | Has a weird lower L in 8x14 and 8x16 charsets. Typical TSENG change to a PC font.
 IBM_PC_BIOS_1981-04-24_HALF_8x8.bin             |LOW | XX | XX | ---  | ------ | IBM PC BIOS, only lower 128 characters, no "graphical" chars.
+```
