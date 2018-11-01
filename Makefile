@@ -10,4 +10,8 @@ run:
 	./viewfont _avga2_8x16.bin
 
 clean:
-	rm -rf bin2header extractbin viewfont font2bmp
+	rm -rf bin2header extractbin viewfont font2bm
+	
+mrproper:
+	make clean
+	rm -rf font-headers/* font-images/*

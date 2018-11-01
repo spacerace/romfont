@@ -9,6 +9,10 @@ do
 
 	echo "gen header from '$font': outfile=$out"
 	./font2bmp $font $out
+	
+	outpng="./font-images/$header.png"
+	magick convert $out $outpng
+	rm $out
 
 	echo ""
 done
