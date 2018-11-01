@@ -14,7 +14,7 @@ do
 	magick convert $out $outpng
 
 	outzoom="./font-images/zoomed/zoomed_$header.png"
-	magick convert $out -resize 400% $outzoom
+	magick convert $out -scale 400% $outzoom
 
 	rm $out
 
