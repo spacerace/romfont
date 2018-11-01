@@ -1,7 +1,7 @@
 #!/bin/bash
 
 file=$1
-romsize=`ls -1l $file|cut -d ' ' -f 5`
+romsize=`ls -1l "$file"|cut -d ' ' -f 5`
 chunksize=4096
 chunks=$(($romsize/$chunksize))
 echo "usage ... <infile> <tmpfolder>"
