@@ -89,7 +89,12 @@ Not all are yet converted to C (most of them in ASM) and bins are generated.
 The original sources are provided already. 
  
 Observations:
-* IBM AT V1-V3 share the same font. Only lower half of charset in 8x8 available.
+* IBM has used a font for the very first PC BIOS, that has changed in second
+  version of BIOS. After this release the font remained the same on these machines:
+  - IBM PC v2, v3
+  - IBM XT v1, v2, v3
+  - IBM XT v1
+  - IBM AT v1, v2, v3
 * The seabios 8x8 and 8x14 are also used on real HW cards from different vendors.
 * The 3dfx 8x8 font is the same as the seabios 8x8 font.
 
@@ -100,7 +105,7 @@ If you want to compare you may use a image viewer and view the zoomed images
 of the desired fonts.
 
 *TODO* split 8x8 charsets into lower and upper half and compare these also, as
-early PCs usually shipped lower 128 characters. This means vendors may have
+early PCs usually only shipped lower 128 characters. This means vendors may have
 taken IBM's lower half and added upper half from other sources.
 
 # viewfont tool
