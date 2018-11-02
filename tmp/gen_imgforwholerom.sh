@@ -8,7 +8,7 @@ echo "usage ... <infile> <tmpfolder>"
 echo "size=$romsize chunks=$(($chunks)) chunksize=$chunksize"
 
 folder=$2
-rm -irv $folder
+rm -fv $folder
 mkdir $folder
 echo "working in folder $folder"
 

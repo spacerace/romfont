@@ -5,20 +5,6 @@ Also I have written a few tools to support this job.
 All extracted fonts and screenshots are available here. 
  
  
-# Build
-Most likely you dont need to build all this stuff, if you only want to look at 
-the screenshots or get the extracted fonts. 
- 
-If you want to build: 
-You need bash, libsdl-dev, libsdl-gfx-dev, imagemagick and gcc to build and run.
-Either click on download as zip on github page or clone via commandline.
-Once you have the source, do this in source folder: 
-```
-$ make
-$ ./gen_headers.sh
-$ ./gen_images.sh
-```
-
 # Already extracted fonts
 ```
 LEGEND: "ok" - font already extracted
@@ -69,4 +55,48 @@ et4000_stb.vbi                                  |    | XX |    |      |        |
 et4000w32isa.BIN                                |    |    | ok |      |        |
 et4000_weirdlowerL.bin                          | ok | ok | ok | ISA  |512k/1M | Has a weird lower L in 8x14 and 8x16 charsets. Typical TSENG change to a PC font.
 IBM_PC_BIOS_1981-04-24_HALF_8x8.bin             |LOW | XX | XX | ---  | ------ | IBM PC BIOS, only lower 128 characters, no "graphical" chars.
+                                                |    |    |    |      |        |
+seabios                                         | OK | OK | OK |      |        |
+bochs                                           |LOW |    |    |      |        |
+                                                |    |    |    |      |        |
+                                                |    |    |    |      |        |
+                                                |    |    |    |      |        |
+                                                |    |    |    |      |        |                                                                                                                                                
+```
+
+# OTHER SOURCES
+
+The folder 'other_sources' contains subfolders, which each holds a set of files for a ROM-font.
+They were not extracted from ROMs, they are already available as source. These
+sources were adapted and simple bin-generators were added to create the binary
+font files. 
+These are available:
+```
+ibm_pc                - original IBM PC, V1/V2/V3
+ibm_xt                - IBM XT, V1/V2/V3
+ibm_xt286             - IBM XT 286, only one BIOS available
+ibm_at                - IBM AT, V1/V2/V3
+seabios               - qemu seabios, 8x8, 8x14, 8x16
+3dfx_leadked_bios     - original source code, 8x8, 8x14, 8x16, 9x14, 9x16
+bochs_bios            - bochs bios, 8x8, only lower half of charset implemented
+```
+Not all are yet converted to C (most of them in ASM) and bins are generated.
+The original sources are provided already. 
+ 
+Observations:
+* IBM AT V1-V3 share the same font. Only lower half of charset in 8x8 available.
+
+
+# Build
+Most likely you dont need to build all this stuff, if you only want to look at 
+the screenshots or get the extracted fonts. 
+ 
+If you want to build: 
+You need bash, libsdl-dev, libsdl-gfx-dev, imagemagick and gcc to build and run.
+Either click on download as zip on github page or clone via commandline.
+Once you have the source, do this in source folder: 
+```
+$ make
+$ ./gen_headers.sh
+$ ./gen_images.sh
 ```
