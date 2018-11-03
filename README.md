@@ -121,7 +121,7 @@ If you want to compare you may use a image viewer and view the zoomed images
 of the desired fonts.
 
 # the tools
-* viewfont bin file 
+* `viewfont <binfile>`
   The viewfont tool displays a charset in it's original size, zoomed and displays
   a single char zoomed. User can navigate through charset with arrow key. 
   Colors can be changed.
@@ -130,11 +130,21 @@ of the desired fonts.
   2048 = 8x8
   3584 = 8x14
   4096 = 8x16
-* bgrep is a binary grep 
+* `bgrep` is a binary grep 
   https://github.com/tmbinc/bgrep
-* extractbin infile offset length outfile 
-  extract parts of a file
-* font2bmp
+* `extractbin <infile> <offset> <length> <outfile>`
+  extract parts of a file. Offset is given in hex, length in decimal. Example: *./extractbin VGA.ROM 29ff 2048 VGAFONT8x8.bin*
+  This extracts 2048byte at 0x29FF from VGA.ROM and writes into VGAFONT8x8.bin.
+* `font2bmp <binfile> <outfile>`
+  This creates a bmp image with full charset overview from binfile and writes into outfile.
+* `bin2header <infile> <array_name> <linewidth> > output.h`
+  This creates a C-header from infile. Array-name is <array_name> with <linewidth> entries per line.
+* `gen_headers.sh`
+  creates headers in `font-headers` from every extracted font in `font-bin`.
+* `gen_images.sh`
+  creates images in `font-images` from every extracted font in `font-bin`.
+* `gen_imgforwholerom.sh <romimage> <folder>`
+  creates images for a whole ROM. File is split into 4k parts, before creating images. All output files go to `folder`.
 
 
 # Build
@@ -151,3 +161,6 @@ $ ./gen_headers.sh
 $ ./gen_images.sh
 ```
 
+
+
+ 
