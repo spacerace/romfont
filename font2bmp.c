@@ -59,6 +59,11 @@ int main(int argc, char **argv) {
     printf("displaying '%s' (%dbytes)\n", filename, infile_size);
 	
 	switch(infile_size) {
+		case 1024:
+			printf("1/2 8x8 font (1024)\n");
+			fy = 8;
+			memset(buffer, 0xff, 2048);
+			break;		
 		case 2048:
 			printf("8x8 font (2048b)\n");
 			fy = 8;

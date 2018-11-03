@@ -2,8 +2,8 @@
 #include <stdint.h>
 
 #include "seabios8x8.h"
-#include "seabios8x14.h"
 #include "seabios8x16.h"
+#include "seabios8x14.h"
 
 int main() {
 	int i;
