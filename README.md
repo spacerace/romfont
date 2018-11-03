@@ -17,8 +17,8 @@ LEGEND: "ok" - font already extracted
         "??" - something strange
         "LO" - only lower 128 characters available
 
-Filename of ROM                                  8x8  8x14 8x16  Bus    Memory   Date   ments (BIOS manuf., year, version, ...)
-------------------------------------------------+----+----+----+------+--------+--------+------------------------------------------------------------------------------------------------
+Filename of ROM                                  8x8  8x14 8x16  Bus    Memory   Date         Comments (BIOS manuf., year, version, ...)
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
 ATI.X550.128.040512.rom                         | ok |    |    |      |        |            |
 Asus.6200.16.050106.rom                         |    |    |    |      |        |            | NV44, 2004 Nvidia, Version 5.44.02.11.00 / AS05
 CLGD5442.ROM                                    | ok | ok |    |      |        |            | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
@@ -121,7 +121,7 @@ If you want to compare you may use a image viewer and view the zoomed images
 of the desired fonts.
 
 # the tools
-* viewfont <bin file>
+* viewfont bin file 
   The viewfont tool displays a charset in it's original size, zoomed and displays
   a single char zoomed. User can navigate through charset with arrow key. 
   Colors can be changed.
@@ -130,9 +130,9 @@ of the desired fonts.
   2048 = 8x8
   3584 = 8x14
   4096 = 8x16
-* bgrep is a binary grep
+* bgrep is a binary grep 
   https://github.com/tmbinc/bgrep
-* extractbin <infile> <offset> <length> <outfile>
+* extractbin infile offset length outfile 
   extract parts of a file
 * font2bmp
 
