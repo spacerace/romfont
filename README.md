@@ -114,6 +114,7 @@ The original sources are provided already.
   Same as with seabios 8x8 font (licensing).
 * 3dfx uses 8x8+8x14 IBM font, but looks like they use NVidia 8x16 font.
 * The Voodoo3 8x8,8x14,8x16 match exactly the leaked ones from 3dfx.
+* The AVGA2 has totally unique fonts - TODO - bit by bit compare - what are the differences?
 
 Have a look at `MD5SUMs` file, it is sorted by sum. This means, you will se which
 cards share same font.
