@@ -66,11 +66,11 @@ IBM_PC_BIOS_1981-04-24_HALF_8x8.bin             | LO | XX | XX | ---  | ------ |
 seabios                                         | ok | ok | ok | ---  | ------ |            | from official source
 bochs                                           | LO | XX | XX | ---  | ------ |            | from official source
 3dfx                                            | ok | ok | ok |      |        |            | from leaked source
-IBM PC BIOS V1                                  | ok | XX | XX |      |        |   1981     | from IBM's source
-IBM PC BIOS V2,V3                               | ok | XX | XX |      |        |   1981     | from IBM's source
-IBM AT BIOS V1,V2,V3                            | ok | XX | XX |      |        |   1981     | from IBM's source
-IBM XT BIOS V1,V2,V3                            | ok | XX | XX |      |        |   1981     | from IBM's source
-IBM XT286 BIOS V1                               | ok | XX | XX |      |        |   1981     |
+IBM PC BIOS V1                                  | LO | XX | XX |      |        |   1981     | from IBM's source
+IBM PC BIOS V2,V3                               | LO | XX | XX |      |        |   1981     | from IBM's source
+IBM AT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
+IBM XT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
+IBM XT286 BIOS V1                               | LO | XX | XX |      |        |   1981     | from IBM's source
                                                 |    |    |    |      |        |            |
                                                 |    |    |    |      |        |            |                                                                                                                                                
 ```
@@ -110,15 +110,18 @@ The original sources are provided already.
   qemu source comment claims this is public domain. I doubt IBM would release
   a font to public domain. Does this mean, qemu relied on claims by package
   creator and now they use a illegal copy?
-* bochs bios 8x8 only brings lower 127 chars that are exactly matching IBM's second font.
+* bochs bios 8x8 only brings lower 128 chars that are exactly matching IBM's second font.
   Same as with seabios 8x8 font (licensing).
 * 3dfx uses 8x8+8x14 IBM font, but looks like they use NVidia 8x16 font.
 * The Voodoo3 8x8,8x14,8x16 match exactly the leaked ones from 3dfx.
 
-Have a look at MD5SUMs file, it is sorted by sum. This means, you will se which
+Have a look at `MD5SUMs` file, it is sorted by sum. This means, you will se which
 cards share same font.
 If you want to compare you may use a image viewer and view the zoomed images
 of the desired fonts.
+
+The folder `lowercharset` holds the lower 128 characters of all 8x8 fonts to
+see, which one uses the original IBM PC's or the second version of this font.
 
 # the tools
 * `viewfont <binfile>`
@@ -145,6 +148,8 @@ of the desired fonts.
   creates images in `font-images` from every extracted font in `font-bin`.
 * `gen_imgforwholerom.sh <romimage> <folder>`
   creates images for a whole ROM. File is split into 4k parts, before creating images. All output files go to `folder`.
+* `gen_lowers.sh`
+  creates a lower-half-charset in `font-bin/lowercharset` for every 8x8font in `font-bin`
 
 
 # Build

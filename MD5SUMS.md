@@ -1,3 +1,8 @@
+Here's a list that lets you see which font matches to others.
+At the end (after 8x16) there are sums for the lower 128 chars of every 8x8
+font. This helps to find out, which cards use the lower 128 chars from IBM, but
+not the upper 128 chars. 
+ 
 # 8x8 fonts, only lower 128 characters
 ```
 a0df9e6330d88830e35cfea4ff49c095  IBM_PC_BIOS_1981-04-24_HALF_8x8.bin (V1) (extracted from ROM)
@@ -13,7 +18,7 @@ d60f39c4a243c695c27a074c9034faa1  bochslower127_8x8.bin
 ```
 36addababf8830d29e7502e7a4d4d9f8  IBM_VGA_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  XGA_8x8.bin
-36addababf8830d29e7502e7a4d4d9f8  3dfx_leaked_source8x8.bin
+36addababf8830d29e7502e7a4d4d9f8  3dfx_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  et4000_weirdlowerL_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  seabios8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  ElsaVIC2_8x8.bin
@@ -50,6 +55,7 @@ d60f39c4a243c695c27a074c9034faa1  bochslower127_8x8.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  TNT2M64_8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  VANTA_8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  Vodoo3PCI_8x14.bin
+8bcbaf14d1c2729dbbbd486d0929f98c  3dfx8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  et3000ax_8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  seabios8x14.bin
 
@@ -86,6 +92,7 @@ fea1b31469b28aa38fd39ccff73883d7  et4000_weirdlowerL_8x14.bin
 b0dc9d505619354ce9444f6b39419b5f  ElsaVIC2_8x16.bin
 b0dc9d505619354ce9444f6b39419b5f  Riva128A_8x16.bin
 b0dc9d505619354ce9444f6b39419b5f  TNT2M64_8x16.bin
+b0dc9d505619354ce9444f6b39419b5f  3dfx8x16.bin
 b0dc9d505619354ce9444f6b39419b5f  Voodoo3PCI_8x16.bin
 
 4ad5e16eac0dea3f2594754b03811954  ElsaFireGLV3200_128_8x16.bin
@@ -103,4 +110,40 @@ b0dc9d505619354ce9444f6b39419b5f  Voodoo3PCI_8x16.bin
 1197238ccdcd5990db9ea3710f5f1b88  Vanta_8x16.bin
 
 e6345a38eb0c73d83b926d1ed593b2bc  et4000_weirdlowerL_8x16.bin
+```
+
+# Lower 128 chars using IBM's BIOS font V2
+```
+a0df9e6330d88830e35cfea4ff49c095  font-bin/lowercharset/lower_IBM_PC_BIOS_1981-04-24_HALF_8x8.bin
+a0df9e6330d88830e35cfea4ff49c095  font-bin/lowercharset/lower_IBM_PC_V1_8x8.bin
+
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_IBM_PC_V2_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_IBM_PC_V3_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_IBM_VGA_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_IBM_XT286_V1_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_IBM_XT_V1-V3_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_3dfx8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_ElsaVIC2_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_S3VirgeGX_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_TNT2M64_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_TSVGA_ET4000_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_Voodoo3PCI_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_XGA_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_bochslower127_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_et4000_weirdlowerL_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_et4000w32isa_8x8.bin
+d60f39c4a243c695c27a074c9034faa1  font-bin/lowercharset/lower_seabios8x8.bin
+```
+
+# Lower 128 chars NOT using IBM's BIOS font
+```
+aa88ef9902472f6d1924f9c064520ff1  font-bin/lowercharset/lower_ATIx550_8x8.bin
+aa88ef9902472f6d1924f9c064520ff1  font-bin/lowercharset/lower_Connect3d_Infineon_8x8.bin
+aa88ef9902472f6d1924f9c064520ff1  font-bin/lowercharset/lower_FujitsuSiemensX300M_8x8.bin
+
+26fe284d2c60c36e023bbca03092a413  font-bin/lowercharset/lower_V7MERC_8x8.bin
+
+6d6a489d18666f09fd28cb18dfd5b44b  font-bin/lowercharset/lower_CLGD5442_8x8.bin
+
+ba6322381f0dacec6c77d6f40b329094  font-bin/lowercharset/lower_AVGA2_8x8.bin
 ```
