@@ -1,14 +1,20 @@
 # What is this?
  
-I have diassembled and/or searched VGA-ROMs for fonts and extracted these. 
+I have diassembled and/or searched BIOS and VGA-ROMs for fonts and extracted these. 
 Also I have written a few tools to support this job. 
 All extracted fonts and screenshots are available here. I have written a big
 table to show what is covered. Also had a look and wrote about fonts of open
 source BIOSes/source available.
 
 If you have exotic ROMs or links to other open source BIOSes please let me know.
- 
- 
+Testing a ROM for known fonts and add it to this list only takes a few minutes and
+if there is one with a yet unknown font, I am happy to extract and document it :)  
+I am really intersted in ROMs of old laptops with weird LCD-fonts and embedded
+devices (like POS systems, cash registers, money machines and other stuff). 
+Also if you have localized graphic cards, that bring a local charset (ex. greek),
+I am happy to extract their' fonts.
+
+
 # Already extracted fonts
 ```
 LEGEND: "ok" - font already extracted
@@ -19,38 +25,40 @@ LEGEND: "ok" - font already extracted
 
 Filename of ROM                                  8x8  8x14 8x16  Bus    Memory   Date         Comments (BIOS manuf., year, version, ...)
 ------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
-ATI.X550.128.040512.rom                         | ok |    |    |      |        |            |
+ATI.X550.128.040512.rom                         | ok |    | ok |      |        |            |
+ATIEgaWonder800p.bin                            |    |    |    |      |        |            |
 Asus.6200.16.050106.rom                         |    |    |    |      |        |            | NV44, 2004 Nvidia, Version 5.44.02.11.00 / AS05
-CLGD5442.ROM                                    | ok | ok |    |      |        |            | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
+CLGD5442.ROM                                    | ok | ok | ok |      |        |            | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
+AVGA2.ROM                                       |    |    |    |      |        |            |
 Commodore386SX-25_AVGA2.bin                     | ok | ok | ok | ISA  |   512k | 03/19/92   | Acumos AVGA2, DeskTop VGA BIOS (340-000-11-Rev1.00), 1984-1991 Phoenix
-Connect3D.9500NP.128.Infineon30.021212.rom      | ok |    |    | AGP  |        | 2002/12/12 | R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
+Connect3D.9500NP.128.Infineon30.021212.rom      | ok |    | ok | AGP  |        | 2002/12/12 | R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
 Diamond Stealth 64 Video VRAM PCI 3.00.bin      |    | ok |    | PCI  |        | 07/05/95   | Stealth 64 Video VRAM Vers. 3.00, Diamond MultiMedia Systems
-ELSAVIC2.ROM                                    |    | ok | ok | AGP  |        | 11/23/98   | ELSA VICTORY II 4.03.00, 98-98 ELSA, 90-98 Elpin Systems
+ELSAVIC2.ROM                                    | ok | ok | ok | AGP  |        | 11/23/98   | ELSA VICTORY II 4.03.00, 98-98 ELSA, 90-98 Elpin Systems
 Elsa.FireGLV3200.128.040910.rom                 | ok |    | ok | PCIE |  128MB | 2004/09/10 | RV380, 1988-2003, ATI BK-ATI VER008.015.121.000
 FujitsuSiemens.QuadroFX1700.512.080123.rom      |    |    |    |      |  512MB |            |
 FujitsuSiemens.X300Mobility.32.050608.rom       | ok | XX | ok |      |   32MB |            |
-G400.ROM                                        |    |    |    |      |        |            |Matrox
-GENOA.ROM                                       |    | ok |    |      |        |            | Tseng
+G400.ROM                                        | ok |    | ok |      |        |            | Matrox
+GENOA.ROM                                       | ok | ok | ok |      |        |            | Tseng
 Gigabyte.6200.16.050711.rom                     |    |    |    |      |        |            |
 Leadtek.6200.16.050128.rom                      |    |    |    |      |        |            |
 M32.ROM                                         |    | ok |    | PCI  |        |            | ATI
 M64GX.ROM                                       |    | ok |    |      |        |            |
-MGAMIL2.ROM                                     |    | xx |    |      |        |            |
-MIROV968.ROM                                    |    | ok |    |      |        |            |
+MGAMIL2.ROM                                     | ok | xx | ok |      |        |            |
+MIROV968.ROM                                    | ok | ok | ok |      |        |            | Same like V7MERC
 MORSE KP800 VGA CL-GD520A-32PC-B.bin            |    | ok |    |      |        |            | CL Award
 NCR VLB VGA CL-GD5428-80QC-A.bin                |    | ok |    |      |        |            |
-R128GL.ROM                                      |    |    |    |      |        |            |
-RIVA128A.ROM                                    |    |    | ok |      |        |            | STB
-S3T64V2.ROM                                     |    | ok |    | PCI  |        |            | S3
+R128GL.ROM                                      | ok |    | ok |      |        |            |
+RIVA128A.ROM                                    | ok |    | ok |      |        |            | STB
+S3T64V2.ROM                                     | ok | ok | ok | PCI  |        |            | S3
 S3VIRGX2.ROM                                    | ok | ok | ok | PCI  |        |            | S3
-Sapphire.9600NP.256.unknown.031028.rom          |    |    |    |      |  256MB |            |
-Sapphire.9600PRO.128.Samsung28.030829.rom       |    |    |    |      |  128MB |            |
-Sapphire.9800XT.256.unknown.031003.rom          |    |    |    |      |  256MB |            |
+Sapphire.9600NP.256.unknown.031028.rom          | ok |    | ok |      |  256MB |            |
+Sapphire.9600PRO.128.Samsung28.030829.rom       | ok |    | ok |      |  128MB |            |
 TNT2M64.ROM                                     | ok | ok | ok |      |        |            |
 TSVGA 9020-12 ET4000 ISA VGA.bin                | ok | ok | ok | ISA  |        |            |
 Trident TVGA8900C (S27C256).bin                 |    |    |    | ISA  |        |            |
 Tseng ET3000AX ISA VGA-VGA ULTRA.bin            |    | ok |    | ISA  |        |            |
 V7MERC.ROM                                      | ok | ok | ok |      |        |            |
+V7_Vega                                         | ok | ok | ok |      |        |            | uses 3dfx font set, different fonts than V7MERC
 VANTA.ROM                                       |    | ok | ?? |      |        |            |
 VANTAGE.ROM                                     |    | ok |    |      |        |            |
 VDOO3PCI.ROM                                    | ok | ok | ok |      |        |            | 3dfx Elpin
@@ -60,9 +68,26 @@ XGA.ROM                                         | ok | ok | ok |      |        |
 et4000_stb.vbi                                  |    | XX |    |      |        |            |
 et4000w32isa.BIN                                | ok | ok | ok |      |        |            |
 et4000_weirdlowerL.bin                          | ok | ok | ok | ISA  |512k/1M |            | Has a weird lower L in 8x14 and 8x16 charsets. Typical TSENG change to a PC font.
+                                                |    |    |    |      |        |            |
 IBM VGA                                         | ok | ok | ok |      |        |            | has a full 8x8 charset.
 IBM_PC_BIOS_1981-04-24_HALF_8x8.bin             | LO | XX | XX | ---  | ------ |            | IBM PC BIOS, only lower 128 characters, no "graphical" chars.
-
+                                                |    |    |    |      |        |            |
+CGA_PRAVETZ.ROM                                 |    |    |    |      |        |            |
+acer500-II_cga_rom.bin                          |    |    |    |      |        |            |
+ati_small_wonder_rev1_GR-ROM.bin                |    |    |    |      |        |            |
+clone2_cga_rom.bin                              |    |    |    |      |        |            |
+clone_cga_rom.bin                               |    |    |    |      |        |            |
+hyundai_mono-graphics-board_e40080004           |    |    |    |      |        |            |
+                                                |    |    |    |      |        |            |
+                                                |    |    |    |      |        |            |
+mda.rom											|    |    |    |      |        |            | 8k ROM only font data, what is this? not extracted yet, some problems
+50146chareuro.rom                               | ok | xx | ok |      |        |            | Tandy 1000, 8x8 and 8x14 in both a 8x16 array with padding zero bytes
+                                                |    |    |    |      |        |            |
+ali1429g.amw (AMI WINBIOS)                      | LO | xx | xx |      |        |            |                                                                                                                                                                                                                                                
+award-2.05.rom                                  | LO |    |    |      |        |            |
+                                                |    |    |    |      |        |            |                                                                                                                                                                                                
+ibmjap.rom                                      | ok | ok | ok |      |        |            | Japanese PS/2 BIOS
+olivetti-m24-1.21.rom                           | LO | xx | xx |      |        |            |
 seabios                                         | ok | ok | ok | ---  | ------ |            | from official source
 bochs                                           | LO | XX | XX | ---  | ------ |            | from official source
 3dfx                                            | ok | ok | ok |      |        |            | from leaked source
@@ -100,7 +125,7 @@ The original sources are provided already.
   - IBM PC v2, v3
   - IBM XT v1, v2, v3
   - IBM XT v1
-  - IBM AT v1, v2, v3
+  - IBM AT v1, v2, v3 
   The only change from first to second version is 1 single bit, that makes a huge
   difference when looking at it (ASCII 0x04, bottom line 0x00 changes to 0x08).
   This font only has the lower 128 characters.
@@ -149,8 +174,6 @@ see, which one uses the original IBM PC's or the second version of this font.
   creates images in `font-images` from every extracted font in `font-bin`.
 * `gen_imgforwholerom.sh <romimage> <folder>`
   creates images for a whole ROM. File is split into 4k parts, before creating images. All output files go to `folder`.
-* `gen_lowers.sh`
-  creates a lower-half-charset in `font-bin/lowercharset` for every 8x8font in `font-bin`
 
 
 # Build
