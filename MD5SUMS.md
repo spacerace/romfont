@@ -2,7 +2,8 @@ Here's a list that lets you see which font matches to others.
 
 First IBM charset only supplied the first 128 characters, I start the list with
 these fonts. This helps to find out, which cards use the lower 128 chars from 
-IBM, but not the upper 128 chars. 
+IBM, but not the upper 128 chars. At the end of this list, there is a section,
+which shows all ROMs using IBM's font V2.
  
 # 8x8 fonts, only lower 128 characters
 ```
