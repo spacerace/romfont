@@ -60,6 +60,7 @@ int main(int argc, char **argv) {
 	for(search_addr = 0; search_addr < (size_image-size_token); search_addr++) {
 		//printf("%05x\n", search_addr);
 		if(!bcmp(ptr_token, ptr_image, size_token)) {
+			printf("%s uses ", filename_image);
 			printf("%s (%db) : ", filename_token, size_token);
 			printf("0x%05x\n", search_addr);
 		}

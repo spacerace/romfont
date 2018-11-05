@@ -1,7 +1,8 @@
 Here's a list that lets you see which font matches to others.
-At the end (after 8x16) there are sums for the lower 128 chars of every 8x8
-font. This helps to find out, which cards use the lower 128 chars from IBM, but
-not the upper 128 chars. 
+
+First IBM charset only supplied the first 128 characters, I start the list with
+these fonts. This helps to find out, which cards use the lower 128 chars from 
+IBM, but not the upper 128 chars. 
  
 # 8x8 fonts, only lower 128 characters
 ```
@@ -36,6 +37,7 @@ d60f39c4a243c695c27a074c9034faa1  award-2.05_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  MGAMIL2_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  Riva128A_8x8.bin
 36addababf8830d29e7502e7a4d4d9f8  V7_Vega_8x8.bin
+36addababf8830d29e7502e7a4d4d9f8  TSENG_ET3000AX_ISAVGA_8x8.bin
 
 72c10a4ee0002d94d9809f2d29592ad3  FujitsuSiemensX300M_8x8.bin
 72c10a4ee0002d94d9809f2d29592ad3  ATIx550_8x8.bin
@@ -57,6 +59,8 @@ cd2f398083b48ddc92d0051b19199614  M64gx_8x8.bin
 625d6fdaa57295d744d40d2b1a9f6f47  AVGA2_8x8.bin
 
 794ecc294601f3611ae9701c455b6eca  CLGD5442_8x8.bin
+794ecc294601f3611ae9701c455b6eca  MORSEKP800_8x8.bin
+794ecc294601f3611ae9701c455b6eca  NCR_GD5428_8x8.bin
 ```
 
 
@@ -79,6 +83,7 @@ cd2f398083b48ddc92d0051b19199614  M64gx_8x8.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  3dfx8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  et3000ax_8x14.bin
 8bcbaf14d1c2729dbbbd486d0929f98c  seabios8x14.bin
+8bcbaf14d1c2729dbbbd486d0929f98c  TSENG_ET3000AX_ISAVGA_8x14.bin
 
 a38a0df5eb12d29098437fb2252eec66  TSVGA_8x14.bin
 a38a0df5eb12d29098437fb2252eec66  et4000w32isa_8x14.bin
@@ -116,6 +121,7 @@ fea1b31469b28aa38fd39ccff73883d7  et4000_weirdlowerL_8x14.bin
 10c3d174722de153243d60a06d29865a  G400_8x16.bin
 10c3d174722de153243d60a06d29865a  MGAMIL2_8x16.bin
 10c3d174722de153243d60a06d29865a  S3Trio64V_8x16.bin
+10c3d174722de153243d60a06d29865a  NCR_GD5428_8x16.bin
 
 4ad5e16eac0dea3f2594754b03811954  ElsaFireGLV3200_128_8x16.bin
 4ad5e16eac0dea3f2594754b03811954  FujitsuSiemensX300M_8x16.bin
@@ -150,11 +156,38 @@ ea91aafe14d122fd73f7860591a2eb75  M64gx_8x16.bin
 1197238ccdcd5990db9ea3710f5f1b88  Vanta_8x16.bin
 
 e6345a38eb0c73d83b926d1ed593b2bc  et4000_weirdlowerL_8x16.bin
+
+c9a7cfb01d7159d6e6456cd6d3b24ed0  MORSEKP800_8x16.bin
 ```
 
-# Lower 128 chars using IBM's BIOS font V2
+# ROMs that use lower 128 chars from IBM's BIOS font V2
 ```
-
+ELSAVIC2.ROM
+G400.ROM
+GENOA.ROM
+MGAMIL2.ROM
+NSILogic-SmartEGAPlus-04-086-01Rev1.45-U21.bin
+OakTechnolgy-unknown-1.bin
+OakTechnolgyVGA-KO77.bin
+RIVA128A.ROM
+S3T64V2.ROM
+S3VIRGX2.ROM
+TNT2M64.ROM
+TSVGA9020-12ET4000ISAVGA.bin
+TsengLabsVGA-4000BIOSV1.1.bin
+Tseng_ET3000AX_ISA_VGA-VGA_ULTRA.bin
+VANTA.ROM
+VDOO3PCI.ROM
+XGA.ROM
+award-2.05.rom
+et4000_stb.vbi
+et4000_weirdlowerL.bin
+et4000w32isa.BIN
+genoa-ega-2.41.rom
+genxt.bin
+ibm-ega.rom
+olivetti-m24-1.21.rom
+video_seven_vega_vga_62L1989V5_435-0016-47.bin
 ```
 
 # Tandy

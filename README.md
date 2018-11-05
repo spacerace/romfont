@@ -12,7 +12,11 @@ if there is one with a yet unknown font, I am happy to extract and document it :
 I am really intersted in ROMs of old laptops with weird LCD-fonts and embedded
 devices (like POS systems, cash registers, money machines and other stuff). 
 Also if you have localized graphic cards, that bring a local charset (ex. greek),
-I am happy to extract their' fonts.
+I am happy to extract their' fonts. 
+ 
+I already extracted more than 110 ROM-fonts. Most likely I am not updating this
+counter for every font, so check the font-bin and font-images folder, if there
+is something new relevant to you. 
 
 
 # Already extracted fonts
@@ -35,28 +39,27 @@ Connect3D.9500NP.128.Infineon30.021212.rom      | ok | xx | ok | AGP  |        |
 Diamond Stealth 64 Video VRAM PCI 3.00.bin      | ok | ok | ok | PCI  |        | 07/05/95   | Stealth 64 Video VRAM Vers. 3.00, Diamond MultiMedia Systems
 ELSAVIC2.ROM                                    | ok | ok | ok | AGP  |        | 11/23/98   | ELSA VICTORY II 4.03.00, 98-98 ELSA, 90-98 Elpin Systems
 Elsa.FireGLV3200.128.040910.rom                 | ok | xx | ok | PCIE |  128MB | 2004/09/10 | RV380, 1988-2003, ATI BK-ATI VER008.015.121.000
-FujitsuSiemens.QuadroFX1700.512.080123.rom      |    |    |    |      |  512MB |            | ??? compressed font ??? cant find font on first look
+FujitsuSiemens.QuadroFX1700.512.080123.rom      | ?? | ?? | ?? |      |  512MB |            | ??? compressed font ??? cant find font on first look
 FujitsuSiemens.X300Mobility.32.050608.rom       | ok | xx | ok |      |   32MB |            |
 G400.ROM                                        | ok | xx | ok |      |        |            | Matrox
 GENOA.ROM                                       | ok | ok | ok |      |        |            | Tseng
-Gigabyte.6200.16.050711.rom                     |    |    |    |      |        |            | ??? compressed font ??? cant find font on first look
-Leadtek.6200.16.050128.rom                      |    |    |    |      |        |            | ??? compressed font ??? cant find font on first look
+Gigabyte.6200.16.050711.rom                     | ?? | ?? | ?? |      |        |            | ??? compressed font ??? cant find font on first look
+Leadtek.6200.16.050128.rom                      | ?? | ?? | ?? |      |        |            | ??? compressed font ??? cant find font on first look
 M32.ROM                                         | ok | ok | ok | PCI  |        |            | ATI
 M64GX.ROM                                       | ok | ok | ok |      |        |            |
 MGAMIL2.ROM                                     | ok | xx | ok |      |        |            |
 MIROV968.ROM                                    | ok | ok | ok |      |        |            | Same like V7MERC
-MORSE KP800 VGA CL-GD520A-32PC-B.bin            |    | ok |    |      |        |            | CL Award
-NCR VLB VGA CL-GD5428-80QC-A.bin                |    | ok |    |      |        |            |
-R128GL.ROM                                      | ok |    | ok |      |        |            |
-RIVA128A.ROM                                    | ok |    | ok |      |        |            | STB
+MORSE KP800 VGA CL-GD520A-32PC-B.bin            | ok | ok | ok |      |        |            | CL Award
+NCR VLB VGA CL-GD5428-80QC-A.bin                | ok | ok | ok |      |        |            |
+R128GL.ROM                                      | ok | xx | ok |      |        |            |
+RIVA128A.ROM                                    | ok | xx | ok |      |        |            | STB
 S3T64V2.ROM                                     | ok | ok | ok | PCI  |        |            | S3
 S3VIRGX2.ROM                                    | ok | ok | ok | PCI  |        |            | S3
-Sapphire.9600NP.256.unknown.031028.rom          | ok |    | ok |      |  256MB |            |
-Sapphire.9600PRO.128.Samsung28.030829.rom       | ok |    | ok |      |  128MB |            |
+Sapphire.9600NP.256.unknown.031028.rom          | ok | xx | ok |      |  256MB |            |
+Sapphire.9600PRO.128.Samsung28.030829.rom       | ok | xx | ok |      |  128MB |            |
 TNT2M64.ROM                                     | ok | ok | ok |      |        |            |
 TSVGA 9020-12 ET4000 ISA VGA.bin                | ok | ok | ok | ISA  |        |            |
-Trident TVGA8900C (S27C256).bin                 |    |    |    | ISA  |        |            |
-Tseng ET3000AX ISA VGA-VGA ULTRA.bin            |    | ok |    | ISA  |        |            |
+Tseng ET3000AX ISA VGA-VGA ULTRA.bin            | ok | ok |    | ISA  |        |            |
 V7MERC.ROM                                      | ok | ok | ok |      |        |            |
 V7_Vega                                         | ok | ok | ok |      |        |            | uses 3dfx font set, different fonts than V7MERC
 VANTA.ROM                                       |    | ok | ?? |      |        |            |
@@ -79,15 +82,15 @@ clone2_cga_rom.bin                              |    |    |    |      |        |
 clone_cga_rom.bin                               |    |    |    |      |        |            |
 hyundai_mono-graphics-board_e40080004           |    |    |    |      |        |            |
                                                 |    |    |    |      |        |            |
-                                                |    |    |    |      |        |            |
-mda.rom											|    |    |    |      |        |            | 8k ROM only font data, what is this? not extracted yet, some problems
+mda.rom                                         | ?? | ?? | ?? |      |        |            | 8k ROM only font data, what is this? not extracted yet, some problems
 50146chareuro.rom                               | ok | xx | ok |      |        |            | Tandy 1000, 8x8 and 8x14 in both a 8x16 array with padding zero bytes
                                                 |    |    |    |      |        |            |
 ali1429g.amw (AMI WINBIOS)                      | LO | xx | xx |      |        |            |                                                                                                                                                                                                                                                
-award-2.05.rom                                  | LO |    |    |      |        |            |
+award-2.05.rom                                  | LO | xx | xx |      |        |            |
                                                 |    |    |    |      |        |            |                                                                                                                                                                                                
 ibmjap.rom                                      | ok | ok | ok |      |        |            | Japanese PS/2 BIOS
 olivetti-m24-1.21.rom                           | LO | xx | xx |      |        |            |
+                                                |    |    |    |      |        |            |
 seabios                                         | ok | ok | ok | ---  | ------ |            | from official source
 bochs                                           | LO | XX | XX | ---  | ------ |            | from official source
 3dfx                                            | ok | ok | ok |      |        |            | from leaked source
@@ -96,8 +99,6 @@ IBM PC BIOS V2,V3                               | LO | XX | XX |      |        |
 IBM AT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
 IBM XT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
 IBM XT286 BIOS V1                               | LO | XX | XX |      |        |   1981     | from IBM's source
-                                                |    |    |    |      |        |            |
-                                                |    |    |    |      |        |            |                                                                                                                                                
 ```
 
 # OTHER SOURCES
@@ -108,13 +109,13 @@ sources were adapted and simple bin-generators were added to create the binary
 font files. 
 These are available:
 ```
-ibm_pc                - original IBM PC, V1/V2/V3
-ibm_xt                - IBM XT, V1/V2/V3
-ibm_xt286             - IBM XT 286, only one BIOS available
-ibm_at                - IBM AT, V1/V2/V3
-seabios               - qemu seabios, 8x8, 8x14, 8x16
-3dfx_leadked_bios     - original source code, 8x8, 8x14, 8x16, 9x14, 9x16
-bochs_bios            - bochs bios, 8x8, only lower half of charset implemented
+ibm_pc             -  original IBM PC, V1/V2/V3
+ibm_xt             -  IBM XT, V1/V2/V3
+ibm_xt286          -  IBM XT 286, only one BIOS available
+ibm_at             -  IBM AT, V1/V2/V3
+seabios            -  qemu seabios, 8x8, 8x14, 8x16
+3dfx_leadked_bios  -  original source code, 8x8, 8x14, 8x16, 9x14, 9x16
+bochs_bios         -  bochs bios, 8x8, only lower half of charset implemented
 ```
 Not all are yet converted to C (most of them in ASM) and bins are generated.
 The original sources are provided already. 
@@ -189,7 +190,3 @@ $ make
 $ ./gen_headers.sh
 $ ./gen_images.sh
 ```
-
-
-
- 
