@@ -25,24 +25,24 @@ LEGEND: "ok" - font already extracted
 
 Filename of ROM                                  8x8  8x14 8x16  Bus    Memory   Date         Comments (BIOS manuf., year, version, ...)
 ------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
-ATI.X550.128.040512.rom                         | ok |    | ok |      |        |            |
+ATI.X550.128.040512.rom                         | ok | xx | ok |      |        |            |
 ATIEgaWonder800p.bin                            |    |    |    |      |        |            |
 Asus.6200.16.050106.rom                         |    |    |    |      |        |            | NV44, 2004 Nvidia, Version 5.44.02.11.00 / AS05
 CLGD5442.ROM                                    | ok | ok | ok |      |        |            | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
-AVGA2.ROM                                       |    |    |    |      |        |            |
+AVGA2.ROM                                       | ok | ok | ok |      |        |            |
 Commodore386SX-25_AVGA2.bin                     | ok | ok | ok | ISA  |   512k | 03/19/92   | Acumos AVGA2, DeskTop VGA BIOS (340-000-11-Rev1.00), 1984-1991 Phoenix
-Connect3D.9500NP.128.Infineon30.021212.rom      | ok |    | ok | AGP  |        | 2002/12/12 | R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
-Diamond Stealth 64 Video VRAM PCI 3.00.bin      |    | ok |    | PCI  |        | 07/05/95   | Stealth 64 Video VRAM Vers. 3.00, Diamond MultiMedia Systems
+Connect3D.9500NP.128.Infineon30.021212.rom      | ok | xx | ok | AGP  |        | 2002/12/12 | R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
+Diamond Stealth 64 Video VRAM PCI 3.00.bin      | ok | ok | ok | PCI  |        | 07/05/95   | Stealth 64 Video VRAM Vers. 3.00, Diamond MultiMedia Systems
 ELSAVIC2.ROM                                    | ok | ok | ok | AGP  |        | 11/23/98   | ELSA VICTORY II 4.03.00, 98-98 ELSA, 90-98 Elpin Systems
-Elsa.FireGLV3200.128.040910.rom                 | ok |    | ok | PCIE |  128MB | 2004/09/10 | RV380, 1988-2003, ATI BK-ATI VER008.015.121.000
-FujitsuSiemens.QuadroFX1700.512.080123.rom      |    |    |    |      |  512MB |            |
-FujitsuSiemens.X300Mobility.32.050608.rom       | ok | XX | ok |      |   32MB |            |
-G400.ROM                                        | ok |    | ok |      |        |            | Matrox
+Elsa.FireGLV3200.128.040910.rom                 | ok | xx | ok | PCIE |  128MB | 2004/09/10 | RV380, 1988-2003, ATI BK-ATI VER008.015.121.000
+FujitsuSiemens.QuadroFX1700.512.080123.rom      |    |    |    |      |  512MB |            | ??? compressed font ??? cant find font on first look
+FujitsuSiemens.X300Mobility.32.050608.rom       | ok | xx | ok |      |   32MB |            |
+G400.ROM                                        | ok | xx | ok |      |        |            | Matrox
 GENOA.ROM                                       | ok | ok | ok |      |        |            | Tseng
-Gigabyte.6200.16.050711.rom                     |    |    |    |      |        |            |
-Leadtek.6200.16.050128.rom                      |    |    |    |      |        |            |
-M32.ROM                                         |    | ok |    | PCI  |        |            | ATI
-M64GX.ROM                                       |    | ok |    |      |        |            |
+Gigabyte.6200.16.050711.rom                     |    |    |    |      |        |            | ??? compressed font ??? cant find font on first look
+Leadtek.6200.16.050128.rom                      |    |    |    |      |        |            | ??? compressed font ??? cant find font on first look
+M32.ROM                                         | ok | ok | ok | PCI  |        |            | ATI
+M64GX.ROM                                       | ok | ok | ok |      |        |            |
 MGAMIL2.ROM                                     | ok | xx | ok |      |        |            |
 MIROV968.ROM                                    | ok | ok | ok |      |        |            | Same like V7MERC
 MORSE KP800 VGA CL-GD520A-32PC-B.bin            |    | ok |    |      |        |            | CL Award

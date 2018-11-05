@@ -4,11 +4,11 @@ file=$1
 romsize=`ls -1l "$file"|cut -d ' ' -f 5`
 chunksize=4096
 chunks=$(($romsize/$chunksize))
-echo "usage gen_imgofwholerom.sh <infile> <tmpfolder>"
+echo "usage gen_imgofwholerom.sh <infile>"
 echo "size=$romsize chunks=$(($chunks)) chunksize=$chunksize"
 
-folder=$2
-rm -irv $folder
+folder="./tmp/"
+rm -rfv $folder
 mkdir $folder
 echo "working in folder $folder"
 

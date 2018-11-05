@@ -15,6 +15,8 @@ d60f39c4a243c695c27a074c9034faa1  bochslower127_8x8.bin
 
 d60f39c4a243c695c27a074c9034faa1  olivetti-m24_8x8.rom
 d60f39c4a243c695c27a074c9034faa1  award-2.05_8x8.bin
+
+998f16d4da8cfad3bd3de596832605dd  ami_winbios8x8.bin
 ```
 
 # 8x8 fonts, full 256 items charset
@@ -47,6 +49,10 @@ d60f39c4a243c695c27a074c9034faa1  award-2.05_8x8.bin
 
 6fbf1a55e4d8d1d9a42d3984c163d822  MIROV968_8x8.bin
 6fbf1a55e4d8d1d9a42d3984c163d822  V7MERC_8x8.bin
+6fbf1a55e4d8d1d9a42d3984c163d822  DiamonStealth64_8x8.bin
+
+cd2f398083b48ddc92d0051b19199614  M32_8x8.bin
+cd2f398083b48ddc92d0051b19199614  M64gx_8x8.bin
 
 625d6fdaa57295d744d40d2b1a9f6f47  AVGA2_8x8.bin
 
@@ -132,6 +138,10 @@ b0dc9d505619354ce9444f6b39419b5f  V7_Vega_8x16.bin
 
 4004da91e75c67675d26ee8e7e18a2f0  V7MERC_8x16.bin
 4004da91e75c67675d26ee8e7e18a2f0  MIROV968_8x16.bin
+4004da91e75c67675d26ee8e7e18a2f0  DiamonStealth64_8x16.bin
+
+ea91aafe14d122fd73f7860591a2eb75  M32_8x16.bin
+ea91aafe14d122fd73f7860591a2eb75  M64gx_8x16.bin
 
 33b53666311f8f8833aad28005599267  seabios8x16.bin
 
@@ -145,4 +155,11 @@ e6345a38eb0c73d83b926d1ed593b2bc  et4000_weirdlowerL_8x16.bin
 # Lower 128 chars using IBM's BIOS font V2
 ```
 
+```
+
+# Tandy
+```
+b72e3b622fdcb4e4619e2b1fa17ae0e3  50146chareuro_8x14in8x16.bin
+
+d1b1f6f0e362f32afaab2dcec39cd81d  50146chareuro_8x8in8x16.bin
 ```
