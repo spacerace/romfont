@@ -1,3 +1,5 @@
+ATIEGAWonder
+
 Here's a list that lets you see which font matches to others.
 
 First IBM charset only supplied the first 128 characters, I start the list with
@@ -59,9 +61,12 @@ cd2f398083b48ddc92d0051b19199614  M64gx_8x8.bin
 
 625d6fdaa57295d744d40d2b1a9f6f47  AVGA2_8x8.bin
 
+709c48bc6d46b11d7984aa04f2bb04be  ATIEgaWonder800p_8x8.bin
+
 794ecc294601f3611ae9701c455b6eca  CLGD5442_8x8.bin
 794ecc294601f3611ae9701c455b6eca  MORSEKP800_8x8.bin
 794ecc294601f3611ae9701c455b6eca  NCR_GD5428_8x8.bin
+
 ```
 
 
@@ -108,6 +113,8 @@ f2e0525e9e02b4ca687c4e5dc3d7cb2f  Winner1kxhr_8x14.bin
 fea1b31469b28aa38fd39ccff73883d7  et4000_weirdlowerL_8x14.bin
 
 633a32ceab6c80401c4edcab329d7e29  VANTAGE_8x14.bin
+
+6e4033b5f44e77bfe3aa7f49eb01f230  ATIEgaWonder800p_8x14.bin
 
 ```
 
@@ -159,6 +166,8 @@ ea91aafe14d122fd73f7860591a2eb75  M64gx_8x16.bin
 e6345a38eb0c73d83b926d1ed593b2bc  et4000_weirdlowerL_8x16.bin
 
 c9a7cfb01d7159d6e6456cd6d3b24ed0  MORSEKP800_8x16.bin
+
+7d37afbc59723c43862ad9b021cbc79c  ATIEgaWonder800p_8x16.bin
 ```
 
 # ROMs that use lower 128 chars from IBM's BIOS font V2

@@ -1,11 +1,11 @@
 /*
- * file './font-bin/3dfx_leaked_source8x8.bin', filesize 2048bytes, linewidth=8bytes
+ * file './font-bin/TSENG_ET3000AX_ISAVGA_8x8.bin', filesize 2048bytes, linewidth=8bytes
  * array created from bin-file by bin2header
  * bin2header (c) 2013 Nils Stec, <nils.stec@gmail.com>
  *
  */
 
-uint8_t 3dfx_leaked_source8x8[2048] = {
+uint8_t TSENG_ET3000AX_ISAVGA_8x8[2048] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x7e, 0x81, 0xa5, 0x81, 0xbd, 0x99, 0x81, 0x7e, 
 	0x7e, 0xff, 0xdb, 0xff, 0xc3, 0xe7, 0xff, 0x7e, 

@@ -18,7 +18,12 @@ I already extracted more than 110 ROM-fonts. Most likely I am not updating this
 counter for every font, so check the font-bin and font-images folder, if there
 is something new relevant to you. 
 
-
+# The tool
+I have written a tool to browse a ROM image and search for 8x8, 8x14, 8x16 charsets
+and export.
+It can be found here on github in another repo, called "romfont-extractor". 
+ 
+  
 # Already extracted fonts
 ```
 LEGEND: "ok" - font already extracted
@@ -30,9 +35,9 @@ LEGEND: "ok" - font already extracted
 Filename of ROM                                  8x8  8x14 8x16  Bus    Memory   Date         Comments (BIOS manuf., year, version, ...)
 ------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
 ATI.X550.128.040512.rom                         | ok | xx | ok |      |        |            |
-ATIEgaWonder800p.bin                            |    |    |    |      |        |            |
 Asus.6200.16.050106.rom                         |    |    |    |      |        |            | NV44, 2004 Nvidia, Version 5.44.02.11.00 / AS05
 CLGD5442.ROM                                    | ok | ok | ok |      |        |            | CL-GD540x/542x VGA BIOS Version 1.20, 1992-1993 Cirrus Logic, 1987-1990 Quadtel
+avga1-a11.bin                                   |    |    |    |      |        |            |
 AVGA2.ROM                                       | ok | ok | ok |      |        |            |
 Commodore386SX-25_AVGA2.bin                     | ok | ok | ok | ISA  |   512k | 03/19/92   | Acumos AVGA2, DeskTop VGA BIOS (340-000-11-Rev1.00), 1984-1991 Phoenix
 Connect3D.9500NP.128.Infineon30.021212.rom      | ok | xx | ok | AGP  |        | 2002/12/12 | R300, Infineon Memory BIOS - P/N 113-94232-101, 1988-2002 ATI BK-ATI VER008.004.008.004
@@ -71,26 +76,48 @@ XGA.ROM                                         | ok | ok | ok |      |        |
 et4000_stb.vbi                                  |    | XX |    |      |        |            |
 et4000w32isa.BIN                                | ok | ok | ok |      |        |            |
 et4000_weirdlowerL.bin                          | ok | ok | ok | ISA  |512k/1M |            | Has a weird lower L in 8x14 and 8x16 charsets. Typical TSENG change to a PC font.
-                                                |    |    |    |      |        |            |
-IBM VGA                                         | ok | ok | ok |      |        |            | has a full 8x8 charset.
+OakTechnolgy-unknown-1.bin                      |    |    |    |      |        |            |
+OakTechnolgyVGA-KO77.bin                        |    |    |    |      |        |            |
+QuadtelS3_86C801_86C805EnhancedVGABIOS2.13.01   |    |    |    |      |        |            |
+QuadtelVGABIOSVersion1.21.00.bin                |    |    |    |      |        |            |
+SVGA141.ROM                                     |    |    |    |      |        |            |
+ToshibaT1000-BIOSROM-V4.10.bin                  |    |    |    |      |        |            |
+TridentTVGA8900C_S27C256.bin                    |    |    |    |      |        |            |
+TsengLabsVGA-4000BIOSV1.1.bin                   |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
+ATIEgaWonder800p.bin                            | ok | ok | ok |      |        |            |
+ami-ega.rom                                     |    |    |    |      |        |            |
+NSILogic-SmartEGAPlus-04-086-01Rev1.45-U21.bin  |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
+IBM VGA                                         | ok | ok | ok |      |        |            | has a full 8x8 charset in 8x8, 8x14 and 8x16
 IBM_PC_BIOS_1981-04-24_HALF_8x8.bin             | LO | XX | XX | ---  | ------ |            | IBM PC BIOS, only lower 128 characters, no "graphical" chars.
-                                                |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
+=> IN THIS SECTION: LOCALIZED VIDEO ROMS (greek, ...)
 CGA_PRAVETZ.ROM                                 |    |    |    |      |        |            |
 acer500-II_cga_rom.bin                          |    |    |    |      |        |            |
 ati_small_wonder_rev1_GR-ROM.bin                |    |    |    |      |        |            |
 clone2_cga_rom.bin                              |    |    |    |      |        |            |
 clone_cga_rom.bin                               |    |    |    |      |        |            |
 hyundai_mono-graphics-board_e40080004           |    |    |    |      |        |            |
-                                                |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
 mda.rom                                         | ?? | ?? | ?? |      |        |            | 8k ROM only font data, what is this? not extracted yet, some problems
 50146chareuro.rom                               | ok | xx | ok |      |        |            | Tandy 1000, 8x8 and 8x14 in both a 8x16 array with padding zero bytes
-                                                |    |    |    |      |        |            |
-ali1429g.amw (AMI WINBIOS)                      | LO | xx | xx |      |        |            |                                                                                                                                                                                                                                                
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
+=> IN THIS SECTION: SYSTEM BIOS
+ali1429g.amw (AMI WINBIOS)                      | LO | xx | xx |      |        |            |
+ami386.bin                                      |    |    |    |      |        |            |
 award-2.05.rom                                  | LO | xx | xx |      |        |            |
-                                                |    |    |    |      |        |            |                                                                                                                                                                                                
+DTK.PII-151B-BIOS.version.1.06B.bin             |    |    |    |      |        |            |
+dtk_erso_2.42_2764.bin                          |    |    |    |      |        |            |
+JukoD16X-BIOSversion1.2.bin                     |    |    |    |      |        |            |
+LongshineLCS-6821N-BIOSversion1.04.bin          |    |    |    |      |        |            |
+VTech-LaserTurboXT-BIOS-V1.11-27C64D.bin        |    |    |    |      |        |            |
+VTech-LaserXT3-BIOS-V1.26-27C64.bin             |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
 ibmjap.rom                                      | ok | ok | ok |      |        |            | Japanese PS/2 BIOS
 olivetti-m24-1.21.rom                           | LO | xx | xx |      |        |            |
-                                                |    |    |    |      |        |            |
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
+=> IN THIS SECTION: FONTS THAT ARE AVAILABLE IN SOURCE
 seabios                                         | ok | ok | ok | ---  | ------ |            | from official source
 bochs                                           | LO | XX | XX | ---  | ------ |            | from official source
 3dfx                                            | ok | ok | ok |      |        |            | from leaked source
@@ -99,6 +126,7 @@ IBM PC BIOS V2,V3                               | LO | XX | XX |      |        |
 IBM AT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
 IBM XT BIOS V1,V2,V3                            | LO | XX | XX |      |        |   1981     | from IBM's source
 IBM XT286 BIOS V1                               | LO | XX | XX |      |        |   1981     | from IBM's source
+------------------------------------------------+----+----+----+------+--------+------------+------------------------------------------------------------------------------------------------
 ```
 
 # OTHER SOURCES
@@ -150,43 +178,3 @@ of the desired fonts.
 The folder `lowercharset` holds the lower 128 characters of all 8x8 fonts to
 see, which one uses the original IBM PC's or the second version of this font.
 
-# the tools
-* `viewfont <binfile>`
-  The viewfont tool displays a charset in it's original size, zoomed and displays
-  a single char zoomed. User can navigate through charset with arrow key. 
-  Colors can be changed.
-  Font size is determined by size of bin-file given to viewfont.
-  1024 = 8x8 half charset
-  2048 = 8x8
-  3584 = 8x14
-  4096 = 8x16
-* `bgrep` is a binary grep 
-  https://github.com/tmbinc/bgrep
-* `extractbin <infile> <offset> <length> <outfile>`
-  extract parts of a file. Offset is given in hex, length in decimal. Example: *./extractbin VGA.ROM 29ff 2048 VGAFONT8x8.bin*
-  This extracts 2048byte at 0x29FF from VGA.ROM and writes into VGAFONT8x8.bin.
-* `font2bmp <binfile> <outfile>`
-  This creates a bmp image with full charset overview from binfile and writes into outfile.
-* `bin2header <infile> <array_name> <linewidth> > output.h`
-  This creates a C-header from infile. Array-name is <array_name> with <linewidth> entries per line.
-* `gen_headers.sh`
-  creates headers in `font-headers` from every extracted font in `font-bin`.
-* `gen_images.sh`
-  creates images in `font-images` from every extracted font in `font-bin`.
-* `gen_imgforwholerom.sh <romimage> <folder>`
-  creates images for a whole ROM. File is split into 4k parts, before creating images. All output files go to `folder`.
-
-
-# Build
-Most likely you dont need to build all this stuff, if you only want to look at 
-the screenshots or get the extracted fonts. 
- 
-If you want to build: 
-You need bash, libsdl-dev, libsdl-gfx-dev, imagemagick and gcc to build and run.
-Either click on download as zip on github page or clone via commandline.
-Once you have the source, do this in source folder: 
-```
-$ make
-$ ./gen_headers.sh
-$ ./gen_images.sh
-```
