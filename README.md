@@ -14,7 +14,7 @@ devices (like POS systems, cash registers, money machines and other stuff).
 Also if you have localized graphic cards, that bring a local charset (ex. greek),
 I am happy to extract their' fonts. 
  
-I already extracted more than 110 ROM-fonts. Most likely I am not updating this
+I already extracted more than 240 ROM-fonts. Most likely I am not updating this
 counter for every font, so check the font-bin and font-images folder, if there
 is something new relevant to you. 
 
