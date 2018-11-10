@@ -1,5 +1,3 @@
-ATIEGAWonder
-
 Here's a list that lets you see which font matches to others.
 
 First IBM charset only supplied the first 128 characters, I start the list with
